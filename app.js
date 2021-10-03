@@ -3,11 +3,9 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const router = require('./routes/books.js')
 const bodyParser = require('body-parser')
-const cors = require('cors')
 dotenv.config()
 
 const app = express()
-app.use(cors())
 app.use(bodyParser.json())
 app.use('/api', router)
 
