@@ -30,6 +30,12 @@ const App = () => {
         />
         <div>
           <Switch>
+            <Route
+              path='/admin'
+              component={() => (
+                <ShowCard users={users} input={input} isAdmin={true} />
+              )}
+            />
             <Route path='/contribute' component={Contribute} />
             <Route
               path='/:name'
@@ -37,7 +43,9 @@ const App = () => {
             />
             <Route
               path='/'
-              component={() => <ShowCard users={users} input={input} />}
+              component={() => (
+                <ShowCard users={users} input={input} isAdmin={false} />
+              )}
               exact={true}
             />
           </Switch>

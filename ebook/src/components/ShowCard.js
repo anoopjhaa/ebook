@@ -2,7 +2,7 @@ import { Grid } from '@mui/material'
 import React from 'react'
 import BookCard from './BookCard'
 
-const ShowCard = ({ users, input }) => {
+const ShowCard = ({ users, input, isAdmin }) => {
   console.log(input)
   return (
     <Grid
@@ -24,12 +24,12 @@ const ShowCard = ({ users, input }) => {
         .map((book) => (
           <Grid item xs={6} sm={4} md={2}>
             <BookCard
-              id={book.id}
+              id={book._id}
               title={book.title}
               image={book.image}
               viewlink={book.viewlink}
-              downloadlink={book.downloadlink}
               category={book.category}
+              isAdmin={isAdmin}
             />
           </Grid>
         ))}

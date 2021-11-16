@@ -39,4 +39,14 @@ router.post('/', (req, res) => {
     })
 })
 
+router.delete('/delete/:id', (req, res) => {
+  bookSchema.findByIdAndRemove(req.params.id, (err, doc) => {
+    if (!err) {
+      res.redirect('/')
+    } else {
+      console.log('Error in employee delete: ' + err)
+    }
+  })
+})
+
 module.exports = router
