@@ -3,18 +3,13 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import { Button, CardActionArea, CardActions } from '@mui/material'
+import { Button, CardActionArea, CardActions, Link } from '@mui/material'
 
 export default function BookCard(book) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component='img'
-          height='300'
-          image={book.image}
-          alt='green iguana'
-        />
+      <CardActionArea href={book.viewlink}>
+        <CardMedia component='img' height='300' image={book.image} />
         <CardContent>
           <Typography gutterBottom variant='subtitle1' component='div'>
             {book.title}
@@ -22,15 +17,15 @@ export default function BookCard(book) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button
+        {/*  <Button
           size='small'
           color='primary'
           variant='contained'
           href={book.viewlink}
         >
           View
-        </Button>
-        <Button
+        </Button> */}
+        {/* <Button
           size='small'
           color='primary'
           variant='contained'
@@ -38,7 +33,7 @@ export default function BookCard(book) {
           // onClick={changeDownload}
         >
           Download
-        </Button>
+        </Button> */}
       </CardActions>
     </Card>
   )

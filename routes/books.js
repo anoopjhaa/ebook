@@ -1,4 +1,3 @@
-const { error } = require('console')
 const express = require('express')
 const router = express.Router()
 const bookSchema = require('../models/bookModel')
@@ -27,7 +26,6 @@ router.post('/', (req, res) => {
     title: req.body.title,
     category: req.body.category,
     viewlink: req.body.viewlink,
-    downloadlink: req.body.downloadlink,
     image: req.body.image,
   })
 

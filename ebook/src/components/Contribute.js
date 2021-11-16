@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import { MenuItem, Typography } from '@mui/material'
 import axios from 'axios'
+import swal from 'sweetalert'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -69,26 +70,33 @@ const currencies = [
 const Form = ({ handleClose }) => {
   const classes = useStyles()
   // create state variables for each input
-  const [Name, setName] = useState('')
-  const [Image, setImage] = useState('')
-  const [Viewlink, setViewlink] = useState('')
-  const [Downloadlink, setDownloadlink] = useState('')
-  const [Category, setCategory] = useState('python')
+  var [Name, setName] = useState('')
+  var [Image, setImage] = useState('')
+  var [Viewlink, setViewlink] = useState('')
+  var [Category, setCategory] = useState('python')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(Name, Image, Viewlink, Downloadlink)
+    console.log(Name, Image, Viewlink)
     axios
-      .post('https://e-libraryy.herokuapp.com/api', {
+      .post('http://localhost:5000/api', {
         title: Name,
         image: Image,
         viewlink: Viewlink,
-        downloadlink: Downloadlink,
         category: Category,
       })
       .then((res) => {
         console.log(res.data)
+        swal({
+          title: 'Thank you for sharing knowledge',
+          icon: 'success',
+        })
       })
+
+    setName('')
+    setImage('')
+    setViewlink('')
+    setCategory('python')
   }
 
   return (
@@ -128,13 +136,6 @@ const Form = ({ handleClose }) => {
           required
           value={Viewlink}
           onChange={(e) => setViewlink(e.target.value)}
-        />
-        <TextField
-          label='Google Drive Download Link'
-          variant='filled'
-          required
-          value={Downloadlink}
-          onChange={(e) => setDownloadlink(e.target.value)}
         />
         <TextField
           id='outlined-select-currency'

@@ -10,7 +10,7 @@ const App = () => {
   const [users, setUsers] = useState([])
 
   const getBooks = async () => {
-    const response = await fetch('https://e-libraryy.herokuapp.com/api')
+    const response = await fetch('http://localhost:5000/api')
     const data = await response.json()
     setUsers(data)
   }
