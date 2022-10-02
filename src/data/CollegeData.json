@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "poster":"https://assets.thehansindia.com/h-upload/2020/04/27/964872-nit-warangal.webp",
+        "logo":"https://img.collegepravesh.com/2015/08/NIT-Warangal-Logo.png",
+        "name":"National Institute of Technology, Warangal",
+        "desc": "Recognised as an Institute of National Importance by the Government of India.",
+        "address":"National Institute of Technology, Off Warangal-Hyderabad Highway, Warangal, Telangana - 506004",
+        "instituteType":"Government",
+        "established":1959,
+        "airportName":"Rajiv Gandhi International Airport, Hyderabad",
+        "airportDistance":168,
+        "railwayName":"Kazipet Junction Railway Station",
+        "railwayDistance":4,
+        "busName":"Warangal Bus Depot",
+        "busDistance":10.5,
+        "bank":true,
+        "library":true,
+        "canteen":true,
+        "boysHostel":true,
+        "girlsHostel":true,
+        "sports":true,
+        "courses": [
+            ["Biotechnology Engineering", 32],
+            ["Chemical Engineering", 60],
+            ["Civil Engineering", 50],
+            ["Computer Science and Engineering", 100],
+            ["Electrical and Electronics Engineering", 80],
+            ["Mechanical Engineering", 60],
+            ["Metallurgical and Materials Engineering", 50]
+        ],
+        "fees": [
+            ["One Time Fees", "₹24,500"],
+            ["Tuition Fee (per Semester)", "₹62,500"],
+            ["Annual Fees", "₹7,500"],
+            ["Total", "₹94,500"]
+        ],
+        "placements": [
+            ["Biotechnology", 32],
+            ["Chemical Engineering", 60],
+            ["Civil Engineering", 50],
+            ["Computer Science and Engineering", 100],
+            ["Electrical and Electronics Engineering", 80],
+            ["Mechanical Engineering", 60],
+            ["Metallurgical and Materials Engineering", 50]
+        ],
+        "placementsImage": "https://img.collegepravesh.com/2021/09/NIT-Warangal-Placement-Statistics-2022.png",
+        "tour": "https://www.google.com/maps/embed?pb=!4v1664014160592!6m8!1m7!1sDXKnjJ3oZW1k5W54z-C0Qg!2m2!1d17.98418025042124!2d79.53078176817121!3f179.49!4f0!5f0.7820865974627469"
+    },
+    {
+        "id": "2",
+        "poster":"https://img.etimg.com/thumb/width-1200,height-900,imgsize-1248409,resizemode-1,msid-73880846/prime/technology-and-startups/the-iit-delhi-connection-of-indias-unicorns-and-what-it-means-for-innovation.jpg",
+        "logo":"https://img.collegepravesh.com/2018/08/IIT-Delhi-Logo.png",
+        "name":"Indian Institute of Technology, Delhi",
+        "desc": "Recognised as an Institute of Eminence by the Government of India.",
+        "address":"Indian Institute of Technology, Hauz Khas, New Delhi, Delhi - 110016",
+        "instituteType":"Government",
+        "established":1961,
+        "airportName":"Indira Gandhi International Airport, Delhi",
+        "airportDistance":17,
+        "railwayName":"Hazrat Nizamuddin Railway Station",
+        "railwayDistance":11,
+        "busName":"New Delhi Bus Depot",
+        "busDistance":13.5,
+        "bank":true,
+        "library":true,
+        "canteen":true,
+        "boysHostel":true,
+        "girlsHostel":false,
+        "sports":true,
+        "courses": [
+            ["Biotechnology Engineering", 32],
+            ["Chemical Engineering", 60],
+            ["Civil Engineering", 50],
+            ["Computer Science and Engineering", 100],
+            ["Electrical and Electronics Engineering", 80],
+            ["Mechanical Engineering", 60],
+            ["Metallurgical and Materials Engineering", 50]
+        ],
+        "fees": [
+            ["One Time Fees", "₹24,500"],
+            ["Tuition Fee (per Semester)", "₹62,500"],
+            ["Annual Fees", "₹7,500"],
+            ["Total", "₹94,500"]
+        ],
+        "placements": [
+            ["Biotechnology", 32],
+            ["Chemical Engineering", 60],
+            ["Civil Engineering", 50],
+            ["Computer Science and Engineering", 100],
+            ["Electrical and Electronics Engineering", 80],
+            ["Mechanical Engineering", 60],
+            ["Metallurgical and Materials Engineering", 50]
+        ],
+        "placementsImage": "https://img.collegepravesh.com/2015/01/Past-Recruiters1.png",
+        "tour": "https://www.google.com/maps/embed?pb=!4v1664719794659!6m8!1m7!1sCAoSLEFGMVFpcE9Rb0pFTmp6UFdUSU96a0JOZ0xBRVAtUFdVU2ptVzRac3I5eTVR!2m2!1d28.54571735075174!2d77.19643325068444!3f190.60190091746597!4f-10.032292300599238!5f0.7820865974627469" 
+    }
+]
